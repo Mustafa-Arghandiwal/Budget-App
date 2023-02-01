@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+	<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link type="text/css" rel="stylesheet" href="assets/style.css">
+	<title>Budget App</title>
+</head>
+
+<body>
+
+	<div class="top">
+
+
+		<!--slide show-->
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+
+				<img class="slideShowImage" src="assets/1.jpg" style="width:100%">
+
+			</div>
+
+			<div class="mySlides fade">
+
+				<img class="slideShowImage" src="assets/2.jpg" style="width:100%">
+
+			</div>
+
+			<div class="mySlides fade">
+
+				<img class="slideShowImage" src="assets/3.jpg" style="width:100%">
+
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- uncomment if you want those 3 slideshow dots for future use, also uncomment code in js file -->
+		<!-- The dots/circles -->
+		<!-- <div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div> -->
+
+		
+
+
+
+
+
+
+
+		<div class="budget">
+			<div class="budget__title">
+				Available Budget in
+				<span class="budget__title--month"></span>:
+			</div>
+
+			<div class="budget__value">0</div>
+
+			<div class="budget__income clearfix">
+				<div class="budget__income--text">Income</div>
+				<div class="right">
+					<div class="budget__income--value">0</div>
+					<div class="budget__income--percentage">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="budget__expenses clearfix">
+				<div class="budget__expenses--text">Expenses</div>
+				<div class="right clearfix">
+					<div class="budget__expenses--value">0</div>
+					<div class="budget__expenses--percentage">0%</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom">
+		<div class="add">
+			<div class="add__container">
+				<select class="add__type">
+					<option value="income" selected>+</option>
+					<option value="expenses">-</option>
+				</select>
+				<input type="text" class="add__description" placeholder="Add description">
+				<input type="number" class="add__value" placeholder="Value">
+				<button class="add__btn">
+					<i class="ion-ios-checkmark-outline"></i>
+				</button>
+			</div>
+		</div>
+
+		<div class="container clearfix">
+			<div class="income">
+				<h2 class="income__title">Income</h2>
+
+				<div class="income__list">
+
+
+
+
+
+
+
+				</div>
+			</div>
+
+			<div class="expenses">
+				<h2 class="expenses__title">Expenses</h2>
+
+				<div class="expenses__list">
+
+
+
+
+					<!-- <div class="item clearfix" id="${type}-${obj.id}">
+						<div class="item__description">${obj.description}</div>
+						<div class="right clearfix">
+							<div class="item__value" data-value="${obj.value}">${obj.value
+								}</div>
+							${type === 'expenses' ? '<div class="item__percentage">0%</div>' : ''}
+							<div class="item__delete">
+								<button class="item__delete--btn">
+									<i class="ion-ios-close-outline" data-item="${type}-${obj.id}">
+									</i>
+								</button>
+							</div>
+						</div>
+					</div> -->
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/app.js"></script>
+</body>
+
+</html>
